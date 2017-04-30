@@ -1,22 +1,5 @@
 # Goals
-- Refactor single-class application to remove code duplication
-- Add unit tests for refactored methods
-
-# Thoughts
-- There are many side effects to contend with
-- All the inputs, outputs to/from the console need to be pushed to the edges, so that we can isolate the functionality we want to test.
-
-#### Changes
-We can start by making some simple refactorings just to move some code around.
-  - move Strings to constants/methods for better isolation
-  - add `prompt()` method to clean up some duplicated code.
-  - add unit tests for Program
-    - `should_format_prompt_message` - Isolate the message prompt from the console interaction
-    - `should_read_console_input` - Mock `System.console()` to prove that we can return the input in lower-case.
-    - `should_build_score_message` - Isolate the score message
-
-# Deep Dive
-We need a way to test the basic functional requirements of this game. We don't have programmatic proof that rock beats scissors, scissors beats paper, etc. Let's try to write a few test cases that will allow us to make sure that
+Before we can begin refactoring, we need a way to test the basic functional requirements of this game. We don't have programmatic proof that rock beats scissors, scissors beats paper, etc. Let's try to write a few test cases that will allow us to make sure that
 the current implementation at least achieves the desired functionality, prior to us begginning to refactor. 
 
 Let's prove that _rock_ beats _scissors_.

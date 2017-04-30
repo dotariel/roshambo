@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy:groovy-all:2.4.6'
+  testCompile 'junit:junit:4.12'
+}
+
+test {
+   testLogging {
+    events 'started', 'passed'
+  }
+}
