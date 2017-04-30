@@ -14,15 +14,9 @@ The exercise is to add two additional options to the game: *lizard* and *spock*,
   - No tests
   - Duplicated code
   - Nested `if/else` constructs
+  - Mostly side effects
 
 ### Steps:
   - Prepare the code base for tests
-    - Push side effects to the edges (interactions with console)
-
-
-# Project Structure
-The project is laid out in a series of subdirectories representing a logical evolution of the refactoring.
-
-- **part1** - Original implementation
-- **part2** - Refactor single-class implementation into more re-usable methods, add unit test
-
+    - Add basic tests as scaffolding to enable refactoring
+    - Refactor to push side effects to the edges (interactions with console)
