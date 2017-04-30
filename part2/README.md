@@ -58,3 +58,6 @@ Finally, we can inspect our collected output for the expected responses.
     assert output[3] == 'Keep beating the machine'
     assert output[4] == 'Good Bye'
 ```
+
+#### Additional Exercises
+Add more tests to scaffold the existing implementation.
