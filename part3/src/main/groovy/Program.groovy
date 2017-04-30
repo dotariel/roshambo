@@ -96,7 +96,7 @@ class Program {
     return "s"
   }
 
-  private static int compareToWin(String humanChoice, String compChoice) {
+  protected static int compareToWin(String humanChoice, String compChoice) {
     if (humanChoice == "r" && compChoice == "p") return -1
     if (humanChoice == "r" && compChoice == "s") return 1
     if (humanChoice == "p" && compChoice == "s") return -1

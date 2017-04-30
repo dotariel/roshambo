@@ -28,14 +28,6 @@ We can start by making some simple refactorings just to move some code around.
     ```
 
   - add unit tests for Program
-    - **should_format_prompt_message** - Isolate the message prompt from the console interaction
-
-      ```
-        @Test
-        public void should_format_prompt_message() {
-          assert Program.formatPrompt("hello") == "hello: "
-        }
-      ```
     - **should_read_console_input** - Mock `System.console()` to prove that we can return the input in lower-case.
 
       ```
@@ -54,3 +46,14 @@ We can start by making some simple refactorings just to move some code around.
         assert Program.getScoreMessage(0,0) == "Score is You = 0 and the Machine = 0"
       }
       ```
+    - **should_format_prompt_message** - Isolate the message prompt from the console interaction
+
+      ```
+      @Test
+      public void should_format_prompt_message() {
+        assert Program.formatPrompt("hello") == "hello: "
+      }
+      ```
+
+#### Next Steps
+Next, we can start to isolate parts of the application for more focused testing and maintenance.

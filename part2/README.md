@@ -59,5 +59,8 @@ Finally, we can inspect our collected output for the expected responses.
     assert output[4] == 'Good Bye'
 ```
 
+#### Next Steps
+Next, we are ready to start refactoring.
+
 #### Additional Exercises
 Add more tests to scaffold the existing implementation.

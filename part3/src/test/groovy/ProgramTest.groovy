@@ -111,11 +111,6 @@ class ProgramTest {
   }
 
   @Test
-  public void should_format_prompt_message() {
-    assert Program.formatPrompt("hello") == "hello: "
-  }
-
-  @Test
   public void should_read_console_input() {
     System.metaClass.'static'.console = { -> [ readLine: { String s -> "user input" } ] }
     assert Program.prompt("Would you like to play?") == 'user input'
@@ -125,5 +120,20 @@ class ProgramTest {
   public void should_build_score_message() {
     assert Program.getScoreMessage(2,3) == "Score is You = 2 and the Machine = 3"
     assert Program.getScoreMessage(0,0) == "Score is You = 0 and the Machine = 0"
+  }
+
+  @Test
+  public void should_format_prompt_message() {
+    assert Program.formatPrompt("hello") == "hello: "
+  }
+
+  @Test
+  public void should_determine_winner() {
+    assert Program.compareToWin("r", "r") == 0
+    assert Program.compareToWin("r", "s") == 1
+    assert Program.compareToWin("p", "r") == 1
+    assert Program.compareToWin("s", "p") == 1
+    assert Program.compareToWin("r", "p") == -1
+    assert Program.compareToWin("p", "s") == -1
   }
 }
