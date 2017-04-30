@@ -1,4 +1,4 @@
-class Legacy {
+class Program {
 
   static int humanScore = 0
   static int compScore = 0

@@ -24,4 +24,5 @@ The exercise is to add two additional options to the game: *lizard* and *spock*,
 The project is laid out in a series of subdirectories representing a logical evolution of the refactoring.
 
 - **part1** - Original implementation
-- **part2** - Begin preparation for adding tests
+- **part2** - Refactor single-class implementation into more re-usable methods, add unit test
+

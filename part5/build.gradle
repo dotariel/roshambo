@@ -10,7 +10,5 @@ dependencies {
 }
 
 test {
-   testLogging {
-    events 'started', 'passed'
-  }
+   testLogging.showStandardStreams = true
 }
