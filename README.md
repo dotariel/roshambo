@@ -24,4 +24,10 @@ The exercise is to add two additional options to the game: *lizard* and *spock*,
     - Refactor to push side effects to the edges (interactions with console)
 
 
+# Running Tests
+To run any of the tests locally, from within the directory, run Gradle:
+```
+gradle clean test --info
+```
+
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg/768px-Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg.png

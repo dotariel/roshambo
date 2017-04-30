@@ -11,6 +11,6 @@ dependencies {
 
 test {
    testLogging {
-    events 'started', 'passed'
+    events 'passed'
   }
 }
