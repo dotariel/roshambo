@@ -23,8 +23,7 @@ class ProgramTest {
       assert output[0] == 'You chose r and the computer chose s'
       assert output[1] == 'You win'
       assert output[2] == 'Score is You = 1 and the Machine = 0'
-      assert output[3] == 'Keep beating the machine'
-      assert output[4] == 'Good Bye'
+      assert output[3] == 'Good Bye'
     }
 
     reset()
@@ -36,8 +35,7 @@ class ProgramTest {
       assert output[0] == 'You chose s and the computer chose p'
       assert output[1] == 'You win'
       assert output[2] == 'Score is You = 1 and the Machine = 0'
-      assert output[3] == 'Keep beating the machine'
-      assert output[4] == 'Good Bye'
+      assert output[3] == 'Good Bye'
     }
 
     reset()
@@ -49,8 +47,7 @@ class ProgramTest {
       assert output[0] == 'You chose p and the computer chose r'
       assert output[1] == 'You win'
       assert output[2] == 'Score is You = 1 and the Machine = 0'
-      assert output[3] == 'Keep beating the machine'
-      assert output[4] == 'Good Bye'
+      assert output[3] == 'Good Bye'
     }
 
     reset()
@@ -125,6 +122,21 @@ class ProgramTest {
   @Test
   public void should_format_prompt_message() {
     assert Program.formatPrompt("hello") == "hello: "
+  }
+
+  @Test
+  public void should_randomize_computer_choice() {
+    def randomMock = new MockFor(Random)
+    
+    randomMock.demand.nextInt { return 0 }
+    randomMock.demand.nextInt { return 1 }
+    randomMock.demand.nextInt { return 2 }
+
+    randomMock.use {
+      assert Program.computerChoice() == 'r'
+      assert Program.computerChoice() == 'p'
+      assert Program.computerChoice() == 's'
+    }
   }
 
   @Test

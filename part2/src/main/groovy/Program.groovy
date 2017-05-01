@@ -51,16 +51,6 @@ class Program {
 
       System.out.println("Score is You = ${humanScore} and the Machine = ${compScore}")
 
-      if (humanScore > compScore) {
-        System.out.println("Keep beating the machine")
-      }
-      else if (compScore > humanScore) {
-        System.out.println("You are getting your ass handed to you!!!")
-      }
-      else {
-        System.out.println("Can someone go ahead already, geez")
-      }
-
       wantToPlay = System.console().readLine("Would you like to play again? ").toLowerCase()
       
       if (wantToPlay == "yes" || wantToPlay == "no") {

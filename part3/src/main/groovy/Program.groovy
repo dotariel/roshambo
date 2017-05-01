@@ -11,9 +11,6 @@ class Program {
   private static final String COMPUTER_WINS   = "The computer wins."
   private static final String PLAYER_WINS     = "You win"
   private static final String TIE             = "The result is a tie."
-  private static final String BEAT_MACHINE    = "Keep beating the machine"
-  private static final String YOU_ARE_LOSING  = "You are getting your ass handed to you!!!"
-  private static final String SCORE_TIED      = "Can someone go ahead already, geez!"
 
   public static void main(String[] args) {
     wantToPlay = prompt(PLAY)
@@ -59,16 +56,6 @@ class Program {
       }
 
       System.out.println(getScoreMessage(humanScore, compScore))
-
-      if (humanScore > compScore) {
-        System.out.println(BEAT_MACHINE)
-      }
-      else if (compScore > humanScore) {
-        System.out.println(YOU_ARE_LOSING)
-      }
-      else {
-        System.out.println(SCORE_TIED)
-      }
 
       wantToPlay = prompt(PLAY)
       

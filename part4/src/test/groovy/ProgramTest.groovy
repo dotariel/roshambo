@@ -4,12 +4,6 @@ import groovy.mock.interceptor.*
 
 class ProgramTest {
 
-  @Before
-  public void before() {
-    Program.humanScore = 0
-    Program.compScore = 0
-  }
-
   @After
   public void after() {
     Program.metaClass = null
@@ -20,37 +14,31 @@ class ProgramTest {
   @Test
   public void rock_should_beat_scissors() {
     runSimulation("r","s").with { output ->
-      assert output[0] == 'You chose r and the computer chose s'
-      assert output[1] == 'You win'
-      assert output[2] == 'Score is You = 1 and the Machine = 0'
+      assert output[0] == 'Player chose r and Computer chose s'
+      assert output[1] == 'Player wins.'
+      assert output[2] == 'Score is Player: 1, Computer: 0'
       assert output[3] == 'Good Bye'
     }
-
-    reset()
   }
 
   @Test
   public void scissors_should_beat_paper() {
     runSimulation("s", "p").with { output ->
-      assert output[0] == 'You chose s and the computer chose p'
-      assert output[1] == 'You win'
-      assert output[2] == 'Score is You = 1 and the Machine = 0'
+      assert output[0] == 'Player chose s and Computer chose p'
+      assert output[1] == 'Player wins.'
+      assert output[2] == 'Score is Player: 1, Computer: 0'
       assert output[3] == 'Good Bye'
     }
-
-    reset()
   }
 
   @Test
   public void paper_should_beat_rock() {
     runSimulation("p", "r").with { output ->
-      assert output[0] == 'You chose p and the computer chose r'
-      assert output[1] == 'You win'
-      assert output[2] == 'Score is You = 1 and the Machine = 0'
+      assert output[0] == 'Player chose p and Computer chose r'
+      assert output[1] == 'Player wins.'
+      assert output[2] == 'Score is Player: 1, Computer: 0'
       assert output[3] == 'Good Bye'
     }
-
-    reset()
   }
 
   @Test
@@ -58,8 +46,6 @@ class ProgramTest {
     runSimulation("p", "p").with { output -> assert output[1] == 'The result is a tie.' }
     runSimulation("r", "r").with { output -> assert output[1] == 'The result is a tie.' }
     runSimulation("s", "s").with { output -> assert output[1] == 'The result is a tie.' }
-
-    reset()
   }
 
   @Test
@@ -67,16 +53,6 @@ class ProgramTest {
     runSimulation("p", "p") // Tie
     runSimulation("r", "s") // Win
     runSimulation("s", "r") // Loss
-
-    assert Program.humanScore == 1
-    assert Program.compScore == 1
-
-    reset()
-  }
-
-  private void reset() {
-    Program.humanScore = 0
-    Program.compScore = 0
   }
 
   private List<String> runSimulation(String playerChoice, String computerChoice) {
@@ -91,8 +67,8 @@ class ProgramTest {
     // Intercept the call to console() and return our mocked console
     System.metaClass.'static'.console = { console }
     
-    // Intercept the call to computerChoice() so that we can return the response we want to verify
-    Program.metaClass.'static'.computerChoice = { return computerChoice } 
+    // Mock the OptionFactory to return what we want:
+    OptionFactory.metaClass.random = { String p -> new OptionFactory().make(computerChoice, p) }
 
     // Intercept the call to println() so that we can inspect the message returned
     def output = []
@@ -105,5 +81,16 @@ class ProgramTest {
     Program.main([] as String[])
 
     return output
+  }
+
+  @Test
+  public void should_read_console_input() {
+    System.metaClass.'static'.console = { -> [ readLine: { String s -> "user input" } ] }
+    assert Program.prompt("Would you like to play?") == 'user input'
+  }
+
+  @Test
+  public void should_format_prompt_message() {
+    assert Program.formatPrompt("hello") == "hello: "
   }
 }

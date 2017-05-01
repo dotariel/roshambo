@@ -10,7 +10,6 @@ This product is a walk-through of a legacy implementation of the popular "rock, 
 ### Exercise
 The exercise is to add two additional options to the game: *lizard* and *spock*, as made popular by [The Big Bang Theory](http://bigbangtheory.wikia.com/wiki/Rock_Paper_Scissors_Lizard_Spock).
 
-
 ### Challenges
   - Large single class with large methods
   - No tests
@@ -19,10 +18,9 @@ The exercise is to add two additional options to the game: *lizard* and *spock*,
   - Mostly side effects
 
 ### Steps:
-  - Prepare the code base for tests
-    - Add basic tests as scaffolding to enable refactoring
-    - Refactor to push side effects to the edges (interactions with console)
-
+  - Add unit test scaffolding for application
+  - Refactor application into isolated components
+  - Add new features with tests
 
 # Running Tests
 To run any of the tests locally, from within the directory, run Gradle:
