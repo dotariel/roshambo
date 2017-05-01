@@ -1,5 +1,3 @@
-package org.dotariel.roshambo
-
 import org.junit.*
 
 class PaperTest {

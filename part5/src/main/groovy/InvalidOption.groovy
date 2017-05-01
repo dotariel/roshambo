@@ -1,0 +1,1 @@
+class InvalidOption extends Exception { }

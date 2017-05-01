@@ -3,9 +3,7 @@ Now that we have refactored a bit and have some more isolated testing, we can ad
 - Break down single-class application into classes
 - More refactoring, including some naming improvements
 
-
 #### Considerations
-- Introduce new options (spock,lizard)
 - Isolate the options into separate classes so they can be individually tested against each other
 
 
