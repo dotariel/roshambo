@@ -57,7 +57,7 @@ class Program {
         startGame()
       }
       else {
-        wantToPlay = System.console().readLine("Please enter Yes or No").toLowerCase()
+        wantToPlay = System.console().readLine("Please enter Yes or No: ").toLowerCase()
         startGame()
       }
     }

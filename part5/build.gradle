@@ -14,3 +14,13 @@ test {
     events 'passed'
   }
 }
+
+jar {
+  manifest { 
+    attributes "Main-Class": "Program"
+  }  
+
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
