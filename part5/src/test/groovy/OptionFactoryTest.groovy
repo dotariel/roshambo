@@ -13,11 +13,12 @@ class OptionFactoryTest {
     assert new OptionFactory().make("s", "fred") instanceof Scissors
     assert new OptionFactory().make("r", "fred") instanceof Rock
     assert new OptionFactory().make("p", "fred") instanceof Paper
+    assert new OptionFactory().make("v", "fred") instanceof Spock
   }
 
   @Test
   public void should_provide_list_of_options() {
-    assert new OptionFactory().options == ['r', 'p', 's']
+    assert new OptionFactory().options == ['r', 'p', 's', 'v', 'l']
   }
 
   @Test
@@ -27,6 +28,6 @@ class OptionFactoryTest {
 
   @Test
   public void should_get_options_summary() {
-    assert new OptionFactory().optionSummary == 'Options: r=Rock, p=Paper, s=Scissors'
+    assert new OptionFactory().optionSummary == 'Options: r=Rock, p=Paper, s=Scissors, v=Spock, l=Lizard'
   }
 }

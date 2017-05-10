@@ -8,17 +8,17 @@ class Program {
 
   private static final String PLAY_PROMPT     = "Would you like to play Roshambo? (Yes) or (No)"
 
-  public static void main(String[] args) {
+  static {
     factory = new OptionFactory()
     game = new Game()
-    
-    wantToPlay = prompt(PLAY_PROMPT)
+  }
 
+  public static void main(String[] args) {
+    wantToPlay = prompt(PLAY_PROMPT)
     startGame()
   }
 
   private static void startGame() {
-
     if (wantToPlay == "yes") {
       playerChoice = prompt(availableOptions())
 
@@ -34,9 +34,8 @@ class Program {
   }
 
   private static void makeSelection() {
-    if (playerChoice == "r" || playerChoice == "p" || playerChoice == "s") {
+    if (playerChoice in factory.options) {
 
-      OptionFactory factory = new OptionFactory()
       Option player = factory.make(playerChoice, "Player")
       Option computer = factory.random("Computer")
 

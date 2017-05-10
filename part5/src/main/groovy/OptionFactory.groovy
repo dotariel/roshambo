@@ -1,6 +1,6 @@
 class OptionFactory {
 
-  private static List<Option> options = [Rock, Paper, Scissors]
+  private static List<Option> options = [Rock, Paper, Scissors, Spock, Lizard]
 
   public Option make(String code, String player) {
     Option option = options.collect { o -> o.newInstance(player) }.find { o -> o.code == code }

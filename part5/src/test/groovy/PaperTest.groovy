@@ -3,6 +3,11 @@ import org.junit.*
 class PaperTest {
 
   @Test
+  public void should_return_code() {
+    assert new Paper().getCode() == 'p'
+  }
+
+  @Test
   public void should_tie_self() {
     assert new Paper().beats(new Paper()) == 0
   }
