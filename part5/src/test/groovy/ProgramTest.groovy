@@ -24,6 +24,9 @@ class ProgramTest {
   @Test
   public void scissors_should_beat_paper() {
     runSimulation("s", "p").with { output ->
+
+      println output
+
       assert output[0] == 'Player chose s and Computer chose p'
       assert output[1] == 'Player wins.'
       assert output[2] == 'Score is Player: 1, Computer: 0'
@@ -93,9 +96,4 @@ class ProgramTest {
   public void should_format_prompt_message() {
     assert Program.formatPrompt("hello") == "hello: "
   }
-
-  // @Test
-  // public void should_show_available_options() {
-  //   assert Program.availableOptions() == "Options: r=Rock, p=Paper, s=Scissors, v=Spock, l=Lizard"
-  // }
 }

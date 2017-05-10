@@ -10,11 +10,11 @@ class Program {
 
   static {
     factory = new OptionFactory()
-    game = new Game()
   }
 
   public static void main(String[] args) {
     wantToPlay = prompt(PLAY_PROMPT)
+    game = new Game()
     startGame()
   }
 
