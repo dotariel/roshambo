@@ -21,3 +21,5 @@ The exercise is to add two additional options to the game: *lizard* and *spock*,
   - Add unit test scaffolding for application
   - Refactor application into isolated components
   - Add new features with tests
+
+[logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg/768px-Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg.png
