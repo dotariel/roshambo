@@ -12,3 +12,26 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
+*.class
+*.log
+
+# sbt specific
+*/.cache
+*/.history
+*/.lib/
+*/dist/*
+*/target/
+*/lib_managed/
+*/src_managed/
+*/project/boot/
+*/project/plugins/project/
+
+# Scala-IDE specific
+*/.scala_dependencies
+*/.worksheet
+
+*/.idea/
+*/project/
+*/core/src/main/java/
+*/core/src/main/scala-2.11/

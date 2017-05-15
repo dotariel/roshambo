@@ -1,0 +1,2 @@
+;reload; */*:dumpStructureTo /private/var/folders/tf/hv_f34hx4c1clfcn414708n59t3d9r/T/sbt-structure.xml download resolveClassifiers
+; {file:/Users/nperez/IdeaProjects/roshambo/part2/}part2/products; {file:/Users/nperez/IdeaProjects/roshambo/part2/}part2/test:products

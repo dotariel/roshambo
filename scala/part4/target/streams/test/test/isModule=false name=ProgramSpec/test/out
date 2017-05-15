@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mProgramSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mrock[0m[0m
+[0m[[0minfo[0m] [0m[32m- should beat scissors[0m[0m
+[0m[[0minfo[0m] [0m[32mscissors[0m[0m
+[0m[[0minfo[0m] [0m[32m- should beat paper[0m[0m
+[0m[[0minfo[0m] [0m[32mpaper[0m[0m
+[0m[[0minfo[0m] [0m[32m- should beat rock[0m[0m
+[0m[[0minfo[0m] [0m[32msame[0m[0m
+[0m[[0minfo[0m] [0m[32m- should tie same[0m[0m
+[0m[[0minfo[0m] [0m[32mprogram[0m[0m
+[0m[[0minfo[0m] [0m[32m- should keep score[0m[0m
+[0m[[0minfo[0m] [0m[32m- should randomize computer choice[0m[0m
+[0m[[0minfo[0m] [0m[32m- should format prompt message[0m[0m
+[0m[[0minfo[0m] [0m[32m- should read console input[0m[0m
+[0m[[0minfo[0m] [0m[32m- should build score message[0m[0m

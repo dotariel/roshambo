@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mGameOptionSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- should make Option from string[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return Left[0m[0m
+[0m[[0minfo[0m] [0m[32m- should make random Option[0m[0m
+[0m[[0minfo[0m] [0m[32m- should provide list of options[0m[0m
