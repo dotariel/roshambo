@@ -1,4 +1,6 @@
 language: scala
+ 
+before_script: cd scala/anicolaspp/
 
 scala:
   - 2.12.2
