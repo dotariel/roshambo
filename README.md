@@ -1,3 +1,6 @@
+Scala/anicolaspp Build Status: [![Build Status](https://travis-ci.org/anicolaspp/roshambo.svg?branch=master)](https://travis-ci.org/anicolaspp/roshambo)
+
+
 
 # Overview
 The purpose of this project is to demonstrate a refactoring exercise and introducing unit tests to make the product more manageable and maintanable. 
