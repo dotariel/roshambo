@@ -1,0 +1,64 @@
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/nperez/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar: class scala.Int now provided by /Users/anicolaspp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set(/Users/nperez/IdeaProjects/roshambo/part3/target/scala-2.12/classes/Program$.class, /Users/nperez/IdeaProjects/roshambo/part3/target/scala-2.12/classes/ProgramInterface$.class, /Users/nperez/IdeaProjects/roshambo/part3/target/scala-2.12/classes/Program.class, /Users/nperez/IdeaProjects/roshambo/part3/target/scala-2.12/classes/ProgramInterface.class, /Users/nperez/IdeaProjects/roshambo/part3/target/scala-2.12/classes/ProgramInterface$$anon$1.class)[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set(/Users/nperez/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala, /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 2 sources: invalidated sources (4) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/target/scala-2.12/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.2[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.2[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 758e0aa0, interfacing (CompilerInterface) with Scala compiler version 2.12.2[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes:/Users/anicolaspp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/target/scala-2.12/classes:/Users/anicolaspp/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.1.jar:/Users/anicolaspp/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.2.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 12.253843137 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, makeSelection, wait, $asInstanceOf, equals, formatPrompt, computerChoice, asInstanceOf, run, synchronized, $isInstanceOf, rnd, prompt, main, Program, notifyAll, isInstanceOf, matchupMessage, compareToWin, startGame, ==, clone, $init$, toString, scoreMessage, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Including /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala by /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala, /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/ProgramInterface.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	ProgramInterface, notify, makeSelection, wait, $asInstanceOf, TIE, equals, formatPrompt, computerChoice, asInstanceOf, run, synchronized, $isInstanceOf, rnd, prompt, OPTIONS, notifyAll, PLAY, COMPUTER_WINS, isInstanceOf, matchupMessage, compareToWin, apply, startGame, ==, clone, PLAY_AGAIN, $init$, toString, scoreMessage, !=, getClass, PLAYER_WINS, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of /Users/anicolaspp/IdeaProjects/roshambo/scala/part3/src/main/scala/Program.scala: Set(ProgramInterface, run)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/Program.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, makeSelection, wait, $asInstanceOf, equals, formatPrompt, computerChoice, asInstanceOf, run, synchronized, $isInstanceOf, rnd, prompt, main, Program, notifyAll, isInstanceOf, matchupMessage, compareToWin, startGame, ==, clone, $init$, toString, scoreMessage, !=, getClass, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/nperez/IdeaProjects/roshambo/part3/src/main/scala/ProgramInterface.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	ProgramInterface, notify, makeSelection, wait, $asInstanceOf, TIE, equals, formatPrompt, computerChoice, asInstanceOf, run, synchronized, $isInstanceOf, rnd, prompt, OPTIONS, notifyAll, PLAY, COMPUTER_WINS, isInstanceOf, matchupMessage, compareToWin, apply, startGame, ==, clone, PLAY_AGAIN, $init$, toString, scoreMessage, !=, getClass, PLAYER_WINS, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

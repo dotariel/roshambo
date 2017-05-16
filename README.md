@@ -1,3 +1,8 @@
+### Scala/anicolaspp Build Status: [![Build Status](https://travis-ci.org/anicolaspp/roshambo.svg?branch=master)](https://travis-ci.org/anicolaspp/roshambo)
+
+### Scala/anicolaspp CodeCov Overrall Report [![codecov](https://codecov.io/gh/anicolaspp/roshambo/branch/master/graph/badge.svg)](https://codecov.io/gh/anicolaspp/roshambo)
+
+
 
 # Overview
 The purpose of this project is to demonstrate a refactoring exercise and introducing unit tests to make the product more manageable and maintanable. 
